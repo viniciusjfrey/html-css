@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* em HTML id, em CSS é #
+   em HTML é class, em CSS é .
+*/
+
+/* id apenas para um elemento, ou seja, só um h1 pode ser principal
+   classe é para vários elementos
+*/
+
+body{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+h1#principal{ /*ou so #principal */
+    font-size: 50px;
+}
+
+h2{
+    color: rgb(88, 80, 68);
+    text-indent: 75px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+hr{
+    color: brown;
+}
+
+.basico{
+    background-color: white;
+}
+
+.mediano{
+    color: darkgoldenrod;
+}

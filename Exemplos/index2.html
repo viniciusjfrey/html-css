@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE VINI</title>
+</head>
+<body>
+    <h1>exercicios notebook</h1>  
+    <h2>Livros favoritos</h2>  
+    <ol>
+        <li>Romance</li>
+        <ol>
+            <li>Crime e castigo</li>
+            <li>Gange dos Sonhos</li>
+            <li>O sol é para todos</li>
+        </ol>
+        <li>Drama</li>
+        <ol>
+            <li>Prisioneiro b-3087</li>
+            <li>A paciente silenciosa</li>
+        </ol>
+    </ol>
+    
+    <hr>
+    
+    <h2>Melhores jogos</h2>
+    <ol>
+        <li>PC</li>
+        <ul>
+            <li>CSGO</li>
+            <li>VALORANT</li>
+        </ul>
+        <li>PS4</li>
+        <ul>
+            <li>THE LAST OF US</li>
+            <li>FIFA</li>
+        </ul>
+    </ol>
+
+    <!--Lista de definicao-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcacao</dd>
+    </dl>
+
+    <hr>
+
+    <!--links externo, target e rel para manter no site-->
+    <p>Voce pode acessar o youtube <a href="https://www.youtube.com" target="_blank" rel="external">aqui</a></p>
+
+    <!--link interno-->
+    <p>voce pode acessar minha outra pagina <a href="pagina2.html" rel="next">aqui</a></p>
+
+    <!--rel="nofollow" nao se compromete com oq tem la-->
+    <!--../ para voltar pasta-->
+
+    <p><a href="a/download.jpeg" download="download.jpeg">download</a></p>
+
+    <!--Imagem dinamina, em ordem base, maior pro menor-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <audio src="midia/audio-teste.mp3" controls autoplay></audio>
+    <!--dar mais de uma opcao de arquivo-->
+
+    <h2>videos</h2>
+    <video controls width="500" poster="thumb.png">
+        <source src="exemplo.mp4" type="video/mp4">
+        <source src="exemplo.mv4" type="video/mv4">
+        <source src="exemplo.webm" type="video/webm">
+        <source src="exemplo.ogv" type="video/ogg">
+        <p>seu computador nao tem compatibilidade com o video</p>
+    </video> <!--carrega em ordem-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
