@@ -13,6 +13,7 @@
     </style>
 </head>
 <body>
+    <!--Não usar muito conteudo, e conteudo importante no iframe, robos de busca nao leem direito-->
     <h1>Teste Iframe</h1>
     <ul>
         <li><a href="teste.html" target="frame">Primeira Pagina</a></li>
@@ -21,6 +22,6 @@
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur veritatis quidem, eius ad doloribus sed beatae nobis dolores. Quo aut autem quibusdam adipisci fugiat non. Ea nisi odit culpa recusandae.</p>
 
-    <iframe name="frame" frameborder="0"></iframe>
+    <iframe name="frame" srcdoc="<h1> Escolha uma das opções acima </h1> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur veritatis quidem, eius ad doloribus sed beatae nobis dolores. Quo aut autem quibusdam adipisci fugiat non. Ea nisi odit culpa recusandae. </p>"></iframe>
 </body>
 </html>
