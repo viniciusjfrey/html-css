@@ -36,6 +36,7 @@ span#burger:hover {
 
 menu {
     display: none;
+    text-align: center;
 }
 
 menu > ul {
@@ -45,6 +46,7 @@ menu > ul {
 menu > ul > li > a {
     display: block;
     padding: 10px;
+    margin: 0px 5px;
     text-decoration: none;
     background-color: rgb(87, 87, 87);
     color: white;
