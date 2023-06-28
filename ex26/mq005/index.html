@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -26,5 +28,15 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perferendis commodi ullam cupiditate atque dicta unde, nihil repellat sunt obcaecati ex fugiat distinctio facere temporibus aut molestiae velit dolores maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ut animi. Distinctio, maiores, porro quo recusandae facilis, vitae id dignissimos accusamus voluptatibus sapiente corporis omnis ipsum fuga? Tempore, nam commodi!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            var itens = document.getElementById('itens');
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
